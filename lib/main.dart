@@ -1,4 +1,5 @@
 import 'package:avo/presentation/localization/app_localization.dart';
+import 'package:avo/presentation/theme/app_theme.dart';
 import 'package:avo/router/app_router.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp.router(
       routerConfig: router.config(),
       debugShowCheckedModeBanner: false,
+      theme: AppTheme.light,
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,
       locale: context.locale,
