@@ -21,7 +21,6 @@ class CustomAssetImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final isSvg = path.endsWith(".svg");
-    // final theme = Theme.of(context);
     return ClipRRect(
       borderRadius: borderRadius ?? BorderRadius.circular(0),
       child: isSvg
