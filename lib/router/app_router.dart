@@ -6,6 +6,7 @@ import 'package:avo/presentation/pages/favorites/favorites_page.dart';
 import 'package:avo/presentation/pages/home/views/home_page.dart';
 import 'package:avo/presentation/pages/orders/orders_page.dart';
 import 'package:avo/presentation/pages/profile/views/profile_page.dart';
+import 'package:avo/presentation/pages/qr/qr_page.dart';
 import 'package:avo/presentation/pages/splash/views/onboarding_page.dart';
 import 'package:avo/presentation/pages/splash/views/splash_screen.dart';
 import 'package:flutter/material.dart';
@@ -30,5 +31,6 @@ class AppRouter extends RootStackRouter {
         AutoRoute(page: ProfileRoute.page, path: "profile"),
       ],
     ),
+    AutoRoute(page: QRRoute.page, path: "/qr"),
   ];
 }

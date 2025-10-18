@@ -22,6 +22,8 @@ abstract class  LocaleKeys {
   static const country = 'country';
   static const warning_please_enter_a_number = 'warning.please_enter_a_number';
   static const warning_please_enter_a_valid_number = 'warning.please_enter_a_valid_number';
+  static const warning_qr_description = 'warning.qr_description';
+  static const warning_scan_or_upload_qr = 'warning.scan_or_upload_qr';
   static const warning = 'warning';
   static const forms_enter_verification_code = 'forms.enter_verification_code';
   static const forms_resend_code_in = 'forms.resend_code_in';
@@ -33,6 +35,12 @@ abstract class  LocaleKeys {
   static const general = 'general';
   static const titles_orders_history = 'titles.orders_history';
   static const titles_orders_active = 'titles.orders_active';
+  static const titles_balance = 'titles.balance';
+  static const titles_total_points = 'titles.total_points';
+  static const titles_my_qr = 'titles.my_qr';
+  static const titles_scan = 'titles.scan';
+  static const titles_company = 'titles.company';
+  static const titles_products = 'titles.products';
   static const titles = 'titles';
 
 }

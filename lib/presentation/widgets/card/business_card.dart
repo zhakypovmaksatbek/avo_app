@@ -1,5 +1,6 @@
 import 'package:avo/presentation/const/app_dimens.dart';
 import 'package:avo/presentation/theme/app_color.dart';
+import 'package:avo/presentation/widgets/card/product_card.dart';
 import 'package:avo/presentation/widgets/image/cashed_image.dart';
 import 'package:flutter/material.dart';
 
@@ -20,13 +21,19 @@ class BusinessCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         spacing: 12,
         children: [
-          CashedImages(
-            imageUrl: "https://picsum.photos/600/1800?random=$index",
-            width: double.infinity,
-            height: 190,
-            borderRadius: BorderRadius.vertical(
-              top: Radius.circular(AppDimens.radiusLarge),
-            ),
+          Stack(
+            alignment: Alignment.topRight,
+            children: [
+              CashedImages(
+                imageUrl: "https://picsum.photos/600/1800?random=$index",
+                width: double.infinity,
+                height: 190,
+                borderRadius: BorderRadius.vertical(
+                  top: Radius.circular(AppDimens.radiusLarge),
+                ),
+              ),
+              LikeButton(),
+            ],
           ),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 10),

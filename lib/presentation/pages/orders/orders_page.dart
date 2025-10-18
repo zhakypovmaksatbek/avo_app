@@ -70,10 +70,7 @@ class _OrdersPageState extends State<OrdersPage> with TickerProviderStateMixin {
           Expanded(
             child: TabBarView(
               controller: tabController,
-              children: [
-                ActiveOrdersView(),
-                Text(LocaleKeys.routes_orders.tr()),
-              ],
+              children: [ActiveOrdersView(), ActiveOrdersView()],
             ),
           ),
         ],

@@ -18,6 +18,8 @@ class AppTheme {
       centerTitle: true,
       backgroundColor: AppColor.white,
       foregroundColor: AppColor.secondary,
+      surfaceTintColor: AppColor.white,
+
       titleTextStyle: TextStyle(
         fontFamily: AppConst.fontFamily,
         fontSize: 17,

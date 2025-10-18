@@ -37,7 +37,9 @@ class CodegenLoader extends AssetLoader{
   },
   "warning": {
     "please_enter_a_number": "Пожалуйста, введите номер",
-    "please_enter_a_valid_number": "Пожалуйста, введите валидный номер"
+    "please_enter_a_valid_number": "Пожалуйста, введите валидный номер",
+    "qr_description": "Покажите QR для начисления или списания баллов и кофе",
+    "scan_or_upload_qr": "Отсканируйте или загрузите QR"
   },
   "forms": {
     "enter_verification_code": "Введите код",
@@ -51,7 +53,13 @@ class CodegenLoader extends AssetLoader{
   },
   "titles": {
     "orders_history": "История",
-    "orders_active": "Активные заказы"
+    "orders_active": "Активные заказы",
+    "balance": "Баланс",
+    "total_points": "{} бонусов",
+    "my_qr": "Мой QR",
+    "scan": "Сканировать",
+    "company": "Компания",
+    "products": "Продукты"
   }
 };
 static const Map<String, Map<String,dynamic>> mapLocales = {"ru": _ru};

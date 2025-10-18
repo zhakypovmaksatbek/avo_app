@@ -28,18 +28,46 @@ class DashboardRoute extends PageRouteInfo<void> {
 
 /// generated route for
 /// [FavoritesPage]
-class FavoritesRoute extends PageRouteInfo<void> {
-  const FavoritesRoute({List<PageRouteInfo>? children})
-    : super(FavoritesRoute.name, initialChildren: children);
+class FavoritesRoute extends PageRouteInfo<FavoritesRouteArgs> {
+  FavoritesRoute({Key? key, List<PageRouteInfo>? children})
+    : super(
+        FavoritesRoute.name,
+        args: FavoritesRouteArgs(key: key),
+        initialChildren: children,
+      );
 
   static const String name = 'FavoritesRoute';
 
   static PageInfo page = PageInfo(
     name,
     builder: (data) {
-      return const FavoritesPage();
+      final args = data.argsAs<FavoritesRouteArgs>(
+        orElse: () => const FavoritesRouteArgs(),
+      );
+      return FavoritesPage(key: args.key);
     },
   );
+}
+
+class FavoritesRouteArgs {
+  const FavoritesRouteArgs({this.key});
+
+  final Key? key;
+
+  @override
+  String toString() {
+    return 'FavoritesRouteArgs{key: $key}';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(this, other)) return true;
+    if (other is! FavoritesRouteArgs) return false;
+    return key == other.key;
+  }
+
+  @override
+  int get hashCode => key.hashCode;
 }
 
 /// generated route for
@@ -118,6 +146,22 @@ class ProfileRoute extends PageRouteInfo<void> {
     name,
     builder: (data) {
       return const ProfilePage();
+    },
+  );
+}
+
+/// generated route for
+/// [QRPage]
+class QRRoute extends PageRouteInfo<void> {
+  const QRRoute({List<PageRouteInfo>? children})
+    : super(QRRoute.name, initialChildren: children);
+
+  static const String name = 'QRRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const QRPage();
     },
   );
 }

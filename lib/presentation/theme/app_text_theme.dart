@@ -11,26 +11,26 @@ class AppTextTheme extends TextTheme {
   );
 
   @override
-  TextStyle? get titleLarge => TextStyle(
+  TextStyle? get titleLarge => const TextStyle(
     fontSize: AppDimens.fontSizeMediumLarge,
     fontWeight: FontWeight.w600,
     fontFamily: AppConst.fontFamily,
   );
 
   @override
-  TextStyle? get titleMedium => TextStyle(
+  TextStyle? get titleMedium => const TextStyle(
     fontSize: AppDimens.fontSizeMedium,
     fontFamily: AppConst.fontFamily,
   );
 
   @override
-  TextStyle? get bodyMedium => TextStyle(
+  TextStyle? get bodyMedium => const TextStyle(
     fontSize: AppDimens.fontSizeSmallLarge,
     fontFamily: AppConst.fontFamily,
   );
 
   @override
-  TextStyle? get bodySmall => TextStyle(
+  TextStyle? get bodySmall => const TextStyle(
     fontSize: AppDimens.fontSizeSmall,
     fontFamily: AppConst.fontFamily,
   );

@@ -1,5 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:avo/generated/locale_keys.g.dart';
+import 'package:avo/main.dart';
 import 'package:avo/presentation/const/app_dimens.dart';
 import 'package:avo/presentation/theme/app_color.dart';
 import 'package:avo/router/app_router.dart';
@@ -19,7 +20,7 @@ class _DashboardPageState extends State<DashboardPage> {
   final List<PageRouteInfo<Object?>> routes = [
     const HomeRoute(),
     const OrdersRoute(),
-    const FavoritesRoute(),
+    FavoritesRoute(),
     const ProfileRoute(),
   ];
   @override
@@ -38,7 +39,9 @@ class _DashboardPageState extends State<DashboardPage> {
         return Scaffold(
           body: child,
           floatingActionButton: FloatingActionButton(
-            onPressed: () {},
+            onPressed: () {
+              router.push(const QRRoute());
+            },
             backgroundColor: theme.primaryColor,
             elevation: 0,
             child: const Icon(
