@@ -32,5 +32,9 @@
     },
     "general": {
         "or_try_through": "Или попробуйте через"
+    },
+    "titles": {
+        "orders_history": "История",
+        "orders_active": "Активные заказы"
     }
 }

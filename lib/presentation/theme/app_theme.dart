@@ -15,11 +15,14 @@ class AppTheme {
     primaryColor: AppColor.primary,
     scaffoldBackgroundColor: AppColor.backgroundColor,
     appBarTheme: AppBarThemeData(
+      centerTitle: true,
       backgroundColor: AppColor.white,
+      foregroundColor: AppColor.secondary,
       titleTextStyle: TextStyle(
         fontFamily: AppConst.fontFamily,
         fontSize: 17,
         fontWeight: FontWeight.w600,
+        color: AppColor.secondary,
       ),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(bottom: Radius.circular(16)),

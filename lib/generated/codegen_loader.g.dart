@@ -48,6 +48,10 @@ class CodegenLoader extends AssetLoader{
   },
   "general": {
     "or_try_through": "Или попробуйте через"
+  },
+  "titles": {
+    "orders_history": "История",
+    "orders_active": "Активные заказы"
   }
 };
 static const Map<String, Map<String,dynamic>> mapLocales = {"ru": _ru};

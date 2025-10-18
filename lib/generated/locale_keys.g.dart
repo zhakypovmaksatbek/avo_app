@@ -31,5 +31,8 @@ abstract class  LocaleKeys {
   static const forms = 'forms';
   static const general_or_try_through = 'general.or_try_through';
   static const general = 'general';
+  static const titles_orders_history = 'titles.orders_history';
+  static const titles_orders_active = 'titles.orders_active';
+  static const titles = 'titles';
 
 }
