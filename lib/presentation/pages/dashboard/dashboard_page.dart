@@ -54,7 +54,7 @@ class _DashboardPageState extends State<DashboardPage> {
             height: 75,
             shadowColor: theme.iconTheme.color?.withValues(alpha: 0.1),
             elevation: 8,
-            color: theme.scaffoldBackgroundColor,
+            // color: theme.scaffoldBackgroundColor,
             shape: AutomaticNotchedShape(
               RoundedRectangleBorder(
                 borderRadius: BorderRadius.vertical(

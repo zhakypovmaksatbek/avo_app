@@ -8,11 +8,11 @@ class AppDimens {
   /// font size medium large 18 px
   static const double fontSizeMediumLarge = 18;
 
-  /// font size medium 17 px
-  static const double fontSizeMedium = 17;
+  /// font size medium 16 px
+  static const double fontSizeMedium = 16;
 
-  /// font size small large 15 px
-  static const double fontSizeSmallLarge = 15;
+  /// font size small large 14 px
+  static const double fontSizeSmallLarge = 14;
 
   /// font size small 12 px
   static const double fontSizeSmall = 12;
@@ -40,8 +40,14 @@ class AppDimens {
   /// padding extra  20 px
   static const double paddingExtra = 20;
 
+  /// padding horizontal 15 px
+  static const double paddingHorizontal = 15;
+
   //. Radius
 
   /// radius large 16 px
   static const double radiusLarge = 16;
+
+  /// radius medium 12 px
+  static const double radiusMedium = 12;
 }

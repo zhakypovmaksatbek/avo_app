@@ -1,3 +1,5 @@
+import 'package:avo/presentation/const/app_const.dart';
+import 'package:avo/presentation/const/app_dimens.dart';
 import 'package:avo/presentation/theme/app_color.dart';
 import 'package:avo/presentation/theme/app_text_theme.dart';
 import 'package:flutter/material.dart';
@@ -8,12 +10,26 @@ class AppTheme {
       seedColor: AppColor.primary,
       primary: AppColor.primary,
       secondary: AppColor.secondary,
+      surface: AppColor.white,
     ),
     primaryColor: AppColor.primary,
-    scaffoldBackgroundColor: AppColor.white,
+    scaffoldBackgroundColor: AppColor.backgroundColor,
+    appBarTheme: AppBarThemeData(
+      backgroundColor: AppColor.white,
+      titleTextStyle: TextStyle(
+        fontFamily: AppConst.fontFamily,
+        fontSize: 17,
+        fontWeight: FontWeight.w600,
+      ),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(bottom: Radius.circular(16)),
+      ),
+    ),
+    fontFamily: AppConst.fontFamily,
+    bottomAppBarTheme: BottomAppBarThemeData(color: AppColor.white),
     disabledColor: AppColor.disabled.withValues(alpha: 0.6),
     inputDecorationTheme: InputDecorationTheme(
-      fillColor: AppColor.fill,
+      fillColor: AppColor.backgroundColor,
       filled: true,
 
       enabledBorder: OutlineInputBorder(
@@ -51,6 +67,16 @@ class AppTheme {
       ),
       unselectedLabelStyle: AppTextTheme().bodySmall?.copyWith(
         color: AppColor.secondary.withValues(alpha: 0.6),
+      ),
+    ),
+    chipTheme: ChipThemeData(
+      labelStyle: AppTextTheme().bodySmall?.copyWith(
+        color: AppColor.secondary,
+        fontSize: 13,
+        fontWeight: FontWeight.w400,
+      ),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(AppDimens.radiusLarge),
       ),
     ),
   );
