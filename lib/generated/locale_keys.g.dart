@@ -8,6 +8,7 @@ abstract class  LocaleKeys {
   static const routes_orders = 'routes.orders';
   static const routes_profile = 'routes.profile';
   static const routes_settings = 'routes.settings';
+  static const routes_personal_data = 'routes.personal_data';
   static const routes = 'routes';
   static const buttons_skip = 'buttons.skip';
   static const buttons_next = 'buttons.next';
@@ -15,6 +16,7 @@ abstract class  LocaleKeys {
   static const buttons_go_to_register = 'buttons.go_to_register';
   static const buttons_done = 'buttons.done';
   static const buttons_resend_code = 'buttons.resend_code';
+  static const buttons_save = 'buttons.save';
   static const buttons = 'buttons';
   static const country_kyrgyzstan = 'country.kyrgyzstan';
   static const country_kazakhstan = 'country.kazakhstan';
@@ -30,6 +32,11 @@ abstract class  LocaleKeys {
   static const forms_enter_phone_number_for_login = 'forms.enter_phone_number_for_login';
   static const forms_login_description = 'forms.login_description';
   static const forms_enter_verification_code_description = 'forms.enter_verification_code_description';
+  static const forms_full_name = 'forms.full_name';
+  static const forms_enter_full_name = 'forms.enter_full_name';
+  static const forms_number = 'forms.number';
+  static const forms_enter_number = 'forms.enter_number';
+  static const forms_birth_date = 'forms.birth_date';
   static const forms = 'forms';
   static const general_or_try_through = 'general.or_try_through';
   static const general = 'general';
@@ -41,6 +48,7 @@ abstract class  LocaleKeys {
   static const titles_scan = 'titles.scan';
   static const titles_company = 'titles.company';
   static const titles_products = 'titles.products';
+  static const titles_levels = 'titles.levels';
   static const titles = 'titles';
 
 }

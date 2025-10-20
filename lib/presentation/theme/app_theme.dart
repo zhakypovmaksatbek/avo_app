@@ -10,7 +10,7 @@ class AppTheme {
       seedColor: AppColor.primary,
       primary: AppColor.primary,
       secondary: AppColor.secondary,
-      surface: AppColor.white,
+      surface: AppColor.fillColor,
     ),
     primaryColor: AppColor.primary,
     scaffoldBackgroundColor: AppColor.backgroundColor,
@@ -39,11 +39,11 @@ class AppTheme {
 
       enabledBorder: OutlineInputBorder(
         borderSide: BorderSide.none,
-        borderRadius: BorderRadius.circular(16),
+        borderRadius: BorderRadius.circular(12),
       ),
       focusedBorder: OutlineInputBorder(
         borderSide: BorderSide(color: AppColor.primary),
-        borderRadius: BorderRadius.circular(16),
+        borderRadius: BorderRadius.circular(12),
       ),
     ),
     textTheme: AppTextTheme().copyWith(

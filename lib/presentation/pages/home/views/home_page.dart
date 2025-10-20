@@ -59,7 +59,7 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
           const SliverPadding(
-            padding: EdgeInsets.only(top: 12),
+            padding: EdgeInsets.only(top: 24),
             sliver: SliverToBoxAdapter(
               child: Column(
                 spacing: 24,

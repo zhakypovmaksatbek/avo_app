@@ -2,9 +2,11 @@ import 'package:auto_route/auto_route.dart';
 import 'package:avo/presentation/pages/auth/views/otp_page.dart';
 import 'package:avo/presentation/pages/auth/views/verify_page.dart';
 import 'package:avo/presentation/pages/dashboard/dashboard_page.dart';
+import 'package:avo/presentation/pages/detail/views/business_detail_page.dart';
 import 'package:avo/presentation/pages/favorites/favorites_page.dart';
 import 'package:avo/presentation/pages/home/views/home_page.dart';
 import 'package:avo/presentation/pages/orders/orders_page.dart';
+import 'package:avo/presentation/pages/profile/views/edit_profile.dart';
 import 'package:avo/presentation/pages/profile/views/profile_page.dart';
 import 'package:avo/presentation/pages/qr/qr_page.dart';
 import 'package:avo/presentation/pages/splash/views/onboarding_page.dart';
@@ -32,5 +34,7 @@ class AppRouter extends RootStackRouter {
       ],
     ),
     AutoRoute(page: QRRoute.page, path: "/qr"),
+    AutoRoute(page: EditProfileRoute.page, path: "/edit-profile"),
+    AutoRoute(page: BusinessDetailRoute.page, path: "/business-detail"),
   ];
 }

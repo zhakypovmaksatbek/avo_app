@@ -60,6 +60,10 @@ dependencies:
 
   # UI
   sliver_tools: ^0.2.12
+  permission_handler: ^12.0.1
+  image_picker: ^1.2.0
+  carousel_slider: ^5.1.1
+  url_launcher: ^6.3.2
 
 dev_dependencies:
   flutter_test:
