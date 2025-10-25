@@ -1,5 +1,4 @@
 import 'package:avo/generated/locale_keys.g.dart';
-import 'package:avo/presentation/const/app_dimens.dart';
 import 'package:avo/presentation/pages/auth/core/models/country_model.dart';
 import 'package:avo/presentation/pages/auth/core/utils/phone_number_formatter.dart';
 import 'package:easy_localization/easy_localization.dart';
@@ -186,64 +185,64 @@ class _CustomPhoneInputState extends State<CustomPhoneInput> {
   }
 }
 
-class _CountryPickerDialog extends StatelessWidget {
-  final List<CountryModel> countries;
-  final ValueChanged<CountryModel> onCountrySelected;
-  final CountryModel selectedCountry;
-  final ScrollController scrollController;
+// class _CountryPickerDialog extends StatelessWidget {
+//   final List<CountryModel> countries;
+//   final ValueChanged<CountryModel> onCountrySelected;
+//   final CountryModel selectedCountry;
+//   final ScrollController scrollController;
 
-  const _CountryPickerDialog({
-    required this.countries,
-    required this.onCountrySelected,
-    required this.scrollController,
-    required this.selectedCountry,
-  });
+//   const _CountryPickerDialog({
+//     required this.countries,
+//     required this.onCountrySelected,
+//     required this.scrollController,
+//     required this.selectedCountry,
+//   });
 
-  @override
-  Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-    return RadioGroup<CountryModel>(
-      onChanged: (value) => onCountrySelected(value!),
-      groupValue: selectedCountry,
-      child: ListView.builder(
-        controller: scrollController,
-        itemCount: countries.length,
-        padding: const EdgeInsets.symmetric(
-          horizontal: AppDimens.paddingLarge,
-          vertical: AppDimens.paddingLarge,
-        ),
-        itemBuilder: (context, index) {
-          final country = countries[index];
-          return RadioListTile(
-            value: country,
-            title: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Flexible(
-                  child: Text(
-                    country.name,
-                    style: theme.textTheme.bodyMedium,
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                  ),
-                ),
-                Text(
-                  country.dialCode,
-                  style: theme.textTheme.bodyMedium,
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                ),
-              ],
-            ),
-            secondary: Text(country.flag, style: theme.textTheme.titleMedium),
-            visualDensity: VisualDensity.compact,
-            contentPadding: EdgeInsets.zero,
-            controlAffinity: ListTileControlAffinity.trailing,
-            radioScaleFactor: 1.2,
-            dense: true,
-          );
-        },
-      ),
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     final theme = Theme.of(context);
+//     return RadioGroup<CountryModel>(
+//       onChanged: (value) => onCountrySelected(value!),
+//       groupValue: selectedCountry,
+//       child: ListView.builder(
+//         controller: scrollController,
+//         itemCount: countries.length,
+//         padding: const EdgeInsets.symmetric(
+//           horizontal: AppDimens.paddingLarge,
+//           vertical: AppDimens.paddingLarge,
+//         ),
+//         itemBuilder: (context, index) {
+//           final country = countries[index];
+//           return RadioListTile(
+//             value: country,
+//             title: Row(
+//               mainAxisAlignment: MainAxisAlignment.spaceBetween,
+//               children: [
+//                 Flexible(
+//                   child: Text(
+//                     country.name,
+//                     style: theme.textTheme.bodyMedium,
+//                     maxLines: 1,
+//                     overflow: TextOverflow.ellipsis,
+//                   ),
+//                 ),
+//                 Text(
+//                   country.dialCode,
+//                   style: theme.textTheme.bodyMedium,
+//                   maxLines: 1,
+//                   overflow: TextOverflow.ellipsis,
+//                 ),
+//               ],
+//             ),
+//             secondary: Text(country.flag, style: theme.textTheme.titleMedium),
+//             visualDensity: VisualDensity.compact,
+//             contentPadding: EdgeInsets.zero,
+//             controlAffinity: ListTileControlAffinity.trailing,
+//             radioScaleFactor: 1.2,
+//             dense: true,
+//           );
+//         },
+//       ),
+//     );
+//   }
+// }

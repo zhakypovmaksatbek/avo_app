@@ -1,4 +1,5 @@
 import 'package:auto_route/auto_route.dart';
+import 'package:avo/presentation/pages/detail/widgets/collapsing_app_bar_title.dart';
 import 'package:avo/presentation/theme/app_color.dart';
 import 'package:avo/presentation/widgets/image/cashed_image.dart';
 import 'package:flutter/material.dart';
@@ -27,10 +28,11 @@ class _BusinessDetailPageState extends State<BusinessDetailPage> {
             systemOverlayStyle: SystemUiOverlayStyle.dark,
             expandedHeight: 300,
             useDefaultSemanticsOrder: false,
+            title: const CollapsingAppBarTitle(title: 'Business Detail'),
             flexibleSpace: FlexibleSpaceBar(
-              title: Text('Business Detail'),
               stretchModes: [StretchMode.zoomBackground],
               collapseMode: CollapseMode.pin,
+
               background: CashedImages(
                 imageUrl: "https://picsum.photos/700/800?random=1",
               ),
@@ -38,7 +40,7 @@ class _BusinessDetailPageState extends State<BusinessDetailPage> {
           ),
           SliverToBoxAdapter(
             child: CashedImages(
-              imageUrl: "https://picsum.photos/700/800?random=1",
+              imageUrl: "https://picsum.photos/700/800?random=2",
             ),
           ),
           SliverList.builder(
