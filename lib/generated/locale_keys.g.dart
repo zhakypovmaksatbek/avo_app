@@ -17,6 +17,7 @@ abstract class  LocaleKeys {
   static const buttons_done = 'buttons.done';
   static const buttons_resend_code = 'buttons.resend_code';
   static const buttons_save = 'buttons.save';
+  static const buttons_view_in_map = 'buttons.view_in_map';
   static const buttons = 'buttons';
   static const country_kyrgyzstan = 'country.kyrgyzstan';
   static const country_kazakhstan = 'country.kazakhstan';

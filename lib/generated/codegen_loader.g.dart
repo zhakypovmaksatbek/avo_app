@@ -30,7 +30,8 @@ class CodegenLoader extends AssetLoader{
     "go_to_register": "Перейти к регистрации",
     "done": "Готово",
     "resend_code": "Отправить код снова",
-    "save": "Сохранить"
+    "save": "Сохранить",
+    "view_in_map": "Посмотреть в карте"
   },
   "country": {
     "kyrgyzstan": "Киргизия",
