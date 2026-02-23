@@ -40,7 +40,7 @@ dependencies:
   # localization
   easy_localization: ^3.0.8
   # dependency injection
-  get_it: ^8.2.0
+  get_it: ^9.1.0
 
   # image
   cached_network_image: ^3.4.1
@@ -52,7 +52,7 @@ dependencies:
   # keyboard
   keyboard_actions: ^4.2.0
   # otp
-  pinput: ^5.0.2
+  pinput: ^6.0.0
   # device preview
   device_preview: ^1.3.1
   # skeleton

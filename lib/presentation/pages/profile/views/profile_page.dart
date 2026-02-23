@@ -199,6 +199,6 @@ class _ProfilePageState extends State<ProfilePage> {
   }
 
   void _onLogoutPressed() {
-    // TODO: Implement logout functionality
+    router.push(OtpRoute());
   }
 }

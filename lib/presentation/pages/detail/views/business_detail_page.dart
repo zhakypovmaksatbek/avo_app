@@ -46,7 +46,7 @@ class _BusinessDetailPageState extends State<BusinessDetailPage>
             surfaceTintColor: Colors.white,
             foregroundColor: AppColor.secondary,
             systemOverlayStyle: SystemUiOverlayStyle.dark,
-            expandedHeight: 532,
+            expandedHeight: 534,
             useDefaultSemanticsOrder: false,
             title: const CollapsingAppBarTitle(title: 'Кофейня “Capito”'),
             flexibleSpace: FlexibleSpaceBar(
@@ -134,7 +134,7 @@ class _BusinessDetailPageState extends State<BusinessDetailPage>
                     ],
                   ),
                   Positioned(
-                    bottom: 218,
+                    bottom: 208,
                     left: 0,
                     right: 0,
                     child: Container(

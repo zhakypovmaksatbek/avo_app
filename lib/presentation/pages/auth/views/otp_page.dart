@@ -4,6 +4,7 @@ import 'package:avo/main.dart';
 import 'package:avo/presentation/const/app_dimens.dart';
 import 'package:avo/presentation/const/asset_const.dart';
 import 'package:avo/presentation/pages/auth/widgets/custom_phone_input.dart';
+import 'package:avo/presentation/theme/app_color.dart';
 import 'package:avo/presentation/widgets/image/custom_asset_image.dart';
 import 'package:avo/router/app_router.dart';
 import 'package:easy_localization/easy_localization.dart';
@@ -39,6 +40,7 @@ class _OtpPageState extends State<OtpPage> {
     final isSmallScreen = screenHeight < 600 || screenWidth < 400;
 
     return Scaffold(
+      backgroundColor: AppColor.white,
       body: SafeArea(
         child: SingleChildScrollView(
           padding: EdgeInsets.all(

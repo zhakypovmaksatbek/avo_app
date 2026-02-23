@@ -6,6 +6,7 @@ import 'package:avo/presentation/const/asset_const.dart';
 import 'package:avo/presentation/pages/auth/core/utils/keyboard_action_config.dart';
 import 'package:avo/presentation/pages/auth/widgets/resend_timer.dart';
 import 'package:avo/presentation/pages/auth/widgets/verify_pin.dart';
+import 'package:avo/presentation/theme/app_color.dart';
 import 'package:avo/presentation/widgets/image/custom_asset_image.dart';
 import 'package:avo/router/app_router.dart';
 import 'package:easy_localization/easy_localization.dart';
@@ -43,6 +44,7 @@ class _VerifyPageState extends State<VerifyPage> {
     final screenWidth = MediaQuery.of(context).size.width;
     final isSmallScreen = screenHeight < 600 || screenWidth < 400;
     return Scaffold(
+      backgroundColor: AppColor.white,
       appBar: AppBar(
         actions: [
           CloseButton(),

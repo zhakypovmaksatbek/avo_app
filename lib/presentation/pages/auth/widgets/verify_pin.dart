@@ -47,6 +47,7 @@ class VerifyPinPutWidget extends StatelessWidget {
 
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(radius),
+        // border: Border.all(color: Theme.of(context).dividerColor),
         color: Theme.of(context).inputDecorationTheme.fillColor,
       ),
     );
